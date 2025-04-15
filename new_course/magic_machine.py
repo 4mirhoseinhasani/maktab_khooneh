@@ -9,12 +9,13 @@ Output:
 At each step, print the current value of n until the number reaches 1.
 """
 n = int(input())
-
+print(n)
 while n > 1:
     if n % 2 == 0:
         n = n / 2
         print(int(n))
-    else:
+    elif n % 2 != 0:
         n = (n * 3) + 1
         print(int(n))
-print(1)
+    elif n == 1:
+        print(1)
