@@ -1,0 +1,11 @@
+'''
+My task:
+Write a function called hello_world that takes no input and just prints the following text.
+
+"Hello, World!"
+'''
+
+def hello_world():
+    print("Hello, World!")
+
+hello_world()
