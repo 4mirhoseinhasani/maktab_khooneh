@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mylibrary
+Version: 0.1
+Summary: A simple library management system
+Author: Amirhosein Hasani
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
