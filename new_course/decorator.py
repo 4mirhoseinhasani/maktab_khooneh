@@ -11,10 +11,10 @@ The execution time of the function in seconds
 
 import timeit
 def run_time(function):
-    def wrraper():
+    def wrapper():
         timer = timeit.Timer(function).timeit(1)
         print(f"Time taken: {timer:.5f} seconds")
-    return wrraper
+    return wrapper
 
 @run_time
 def make_list():
