@@ -13,14 +13,14 @@ import timeit
 def run_time(function):
     def wrraper():
         timer = timeit.Timer(function).timeit(1)
-        print(f"Time taken: {timer:.4f} seconds")
+        print(f"Time taken: {timer:.5f} seconds")
     return wrraper
 
 @run_time
 def make_list():
     list = []
     n = int(input("please enter a number: "))
-    for n in range(1, n+1):
+    for n in range(1, n):
         list.append(n)
     return list
 
