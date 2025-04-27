@@ -13,14 +13,14 @@ import timeit
 def run_time(function):
     def wrapper():
         timer = timeit.Timer(function).timeit(1)
-        print(f"Time taken: {timer:.5f} seconds")
+        print(f"Time taken: {timer:.6f} seconds")
     return wrapper
 
 @run_time
 def make_list():
     list = []
-    n = int(input("please enter a number: "))
-    for n in range(1, n):
+    #n = int(input("please enter a number: "))
+    for n in range(1,90):
         list.append(n)
     return list
 
